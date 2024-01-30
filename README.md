@@ -1,3 +1,23 @@
+Primeiro criamos o projeto com "npx create-next-app@latest ." já dentro da pasta destino (por isso o .)
+Foram escolhidos o typescript, eslint, tailwindcss e app router nas opções.
+
+Depois iniciamos a construção do diagrama em app.diagrams.net
+
+Instalamos o prisma como dependencia de desenvolvimento:
+npm install prisma --save-dev
+
+iniciamos o prisma passando a instrução usando um postgresql como banco de dados:
+npx prisma init --datasource-provider postgresql
+foram criados os arquivos schema.prisma e arquivo .env para colocar a conection string. (vamos usar o supabase.com)
+
+No supabase, com a conta criada, vamos em dashboard > new project
+
+Colocamos o nome do projeto como BarberFS
+Geramos uma senha (WfYZ2C4usBHK29Pq) e deixamos a região como South America (São Paulo)
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
