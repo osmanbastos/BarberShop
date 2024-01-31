@@ -1,56 +1,66 @@
-Primeiro criamos o projeto com "npx create-next-app@latest ." já dentro da pasta destino (por isso o .)
-Foram escolhidos o typescript, eslint, tailwindcss e app router nas opções.
+# Página de Serviços de Barbearias
+## Descrição do Projeto
+Este projeto visa desenvolver uma plataforma web que permita aos clientes escolherem uma barbearia, selecionar um tipo de serviço oferecido pela barbearia e agendar um horário disponível. A aplicação será desenvolvida utilizando as seguintes tecnologias:
 
-Depois iniciamos a construção do diagrama em app.diagrams.net
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) Framework 	![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) para construção de aplicações web rápidas e eficientes.
 
-Instalamos o prisma como dependencia de desenvolvimento:
-npm install prisma --save-dev
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) Superset do JavaScript que adiciona tipagem estática ao código, proporcionando um desenvolvimento mais seguro e fácil de manter.
 
-iniciamos o prisma passando a instrução usando um postgresql como banco de dados:
-npx prisma init --datasource-provider postgresql
-foram criados os arquivos schema.prisma e arquivo .env para colocar a conection string. (vamos usar o supabase.com)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) Framework de estilos utilitários que facilita a construção de interfaces modernas e responsivas.
 
-No supabase, com a conta criada, vamos em dashboard > new project
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+ Ferramenta de linting para garantir a consistência do código e identificar problemas de forma automática.
 
-Colocamos o nome do projeto como BarberFS
-Geramos uma senha (WfYZ2C4usBHK29Pq) e deixamos a região como South America (São Paulo)
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ORM (Object-Relational Mapping) para interação com o banco de dados, proporcionando uma maneira fácil e segura de realizar consultas e manipular dados.
 
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) Plataforma de banco de dados como serviço (DBaaS) que será utilizada para armazenar dados relacionados aos usuários, barbearias, serviços e horários.
 
+app.diagrams.net: Ferramenta para criar diagramas, onde o diagrama do projeto está sendo desenvolvido para uma melhor compreensão da arquitetura.
 
+## Funcionalidades Principais
+Seleção de Barbearia:
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Lista de barbearias disponíveis para o cliente escolher.
+Seleção de Serviço:
 
-## Getting Started
+Após escolher a barbearia, o cliente pode selecionar o tipo de serviço desejado.
+Agendamento de Horário:
 
-First, run the development server:
+Escolha do horário disponível para o serviço selecionado na barbearia escolhida.
+Autenticação de Usuários:
 
-```bash
+Acesso seguro às funcionalidades, com a possibilidade de cadastro e login.
+Configuração do Ambiente de Desenvolvimento
+
+## Clone o Repositório:
+
+bash
+Copy code
+git clone https://github.com/osmanbastos/barberShop.git
+cd barberShop
+Instale as Dependências:
+
+Copy code
+npm install
+Configure as Variáveis de Ambiente:
+
+Crie um arquivo .env.local na raiz do projeto e configure as variáveis necessárias, como chaves de acesso ao Supabase, por exemplo.
+Execute o Projeto:
+
+arduino
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou sugerir melhorias para tornar este projeto ainda mais incrível.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Licença
+Este projeto é licenciado sob a MIT License.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Contact me on social media:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![LINKEDIN](https://img.shields.io/badge/-Osman_Bastos-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/osmanbastos/)
+[![MAIL](https://img.shields.io/badge/-OSMANBASTOS@HOTMAIL.COM-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:osmanbastos@hotmail.com)
+[![Instagram](https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/osman_bastos/)
+[![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/osmanbastos/)
+Esperamos que este README forneça informações abrangentes sobre o projeto, incentivando a colaboração e facilitando a compreensão para os desenvolvedores interessados.
